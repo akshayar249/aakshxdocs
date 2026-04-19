@@ -1,14 +1,12 @@
 const config = {
-  title: 'Safe Docs',
-  url: 'http://localhost',
-  baseUrl: '/',
-  favicon: 'img/favicon.ico',
-
-  organizationName: 'test',
-  projectName: 'test',
+ 
 
   onBrokenLinks: 'ignore',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+  hooks: {
+    onBrokenMarkdownLinks: 'warn',
+  },
+},
 
   presets: [
     [
